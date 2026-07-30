@@ -1,0 +1,11 @@
+{
+  "name": "webhook-runner",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
