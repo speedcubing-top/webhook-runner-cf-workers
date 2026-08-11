@@ -19,13 +19,13 @@ export default {
     }
 
     if (!config || !config.webhooks) {
-      return new Response("Not Found", { status: 404 });
+      return new Response("Not Found (1)", { status: 404 });
     }
 
     // 2. 尋找對應的 webhook 路由
     const matchedWebhook = config.webhooks.find(w => w.path === pathname);
     if (!matchedWebhook || request.method !== "POST") {
-      return new Response("Not Found", { status: 404 });
+      return new Response("Not Found (2)", { status: 404 });
     }
 
     console.log(`Received webhook: ${pathname}`);
